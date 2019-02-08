@@ -21,7 +21,8 @@ type aatConfig struct {
 	unit       iface.UnitSystem
 }
 
-//TODO: replace s parameter with printf interface?
+// aatPad; 
+// TODO: replace s parameter with printf interface?
 func aatPad(s string, mustLen int) (ret string) {
 	ansiEsc := regexp.MustCompile("\033.*?m")
 	ret = s
